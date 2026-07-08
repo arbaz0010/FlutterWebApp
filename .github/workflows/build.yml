@@ -25,8 +25,8 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.5.2'   # اپنے پروجیکٹ کے Flutter SDK ورژن سے میچ کر لیں
           channel: 'stable'
+          cache: true
 
       - name: Install dependencies
         run: flutter pub get
